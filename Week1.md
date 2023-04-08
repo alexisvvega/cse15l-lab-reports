@@ -18,4 +18,5 @@ Now that the terminal is connected you are able to run some commands! Running th
 
 ![Image](Trying.png)
 
-The ls command shows you what is inside the directory. 
+The ls command shows you what is inside the directory, the pwd command prints out the working directory and the cat command concatenates the text from the file. The different commands you try will produce different outcomes. So try a bunch and see what happens!
+
