@@ -11,3 +11,11 @@ To begin connecting you have to open a New Terminal. Within this terminal you wi
 Doing the following should produce a message asking you if you want to continue, accept it. Accepting by typing yes as well as following the next instruction of entering your password should result in your terminal producing something like this: 
 
 ![Image](Connecting.png)
+
+The terminal is now connected to a computer in the CSE basement!
+
+Now that the terminal is connected you are able to run some commands! Running the commands should produce something like this:
+
+![Image](Trying.png)
+
+The ls command shows you what is inside the directory. 
