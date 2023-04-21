@@ -25,5 +25,12 @@ Now that the terminal is connected you are able to run some commands! Running th
 
 ![Image](Trying.png)
 
-The ls command shows you what is inside the directory, the pwd command prints out the working directory and the cat command concatenates the text from the file. The different commands you try will produce different outcomes. So try a bunch and see what happens!
+The ls command shows you what is inside the directory, the pwd command prints out the working directory and the cat command concatenates the text from the file. 
+
+![Image](test2.png)
+![Image](MoreTests.png)
+
+For example here I used ls to see what was inside my directory and called cat hello.txt to see what was in the file. There are many other ls commands too such as the command 'ls-f' which lists all entries in the directory in order. The -l option uses a long format similar to 'ls -la' and adds a long listing format with information on its size, last time modified as well as other stuff associated with the file or directory.
+
+The different commands you try will produce different outcomes. So try a bunch and see what happens!
 
