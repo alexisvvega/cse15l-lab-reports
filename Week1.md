@@ -11,7 +11,11 @@ To begin connecting you have to open a New Terminal. Within this terminal you wi
 
 ![Image](LoggingIn.png)
 
-Doing the following should produce a message asking you if you want to continue, accept it. Accepting by typing yes as well as following the next instruction of entering your password should result in your terminal producing something like this: 
+Doing the following should produce a message asking you if you want to continue, accept it. 
+
+![Image](Verify.png)
+
+Accepting by typing yes as well as following the next instruction of entering your password should result in your terminal producing something like this: 
 
 ![Image](Connecting.png)
 
