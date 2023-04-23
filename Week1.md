@@ -13,7 +13,13 @@ To begin connecting you have to open a New Terminal. Within this terminal you wi
 
 Doing the following should produce a message asking you if you want to continue, accept it. 
 
-![Image](Verify.png)
+~~~
+ssh cs15lsp23zz@ieng6@ucsd.edu
+The authenticty of host 'ieng6.ucsd.edu (128.ucsd.edu)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+~~~
+
 
 Accepting by typing yes as well as following the next instruction of entering your password should result in your terminal producing something like this: 
 
