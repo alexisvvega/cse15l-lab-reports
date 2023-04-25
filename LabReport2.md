@@ -1,11 +1,14 @@
 # Lab Report 2
 
 ## Part 1
+![Image](TheCode.png)
 
 
 ![Image](Running1.png)
 
-The methods that are called  
+The methods that are called within my code are the handleRequest 
+
+
 ![Image](Running2.png)
 
 
