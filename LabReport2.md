@@ -42,6 +42,30 @@ The symptom, as the output of running the tests
 
 The bug, as the before-and-after code change required to fix it 
 
+~~~
+public class ArrayExamples{
+  static void reverseInPlace(int[] arr){
+  for (int i = 0; i < arr.length/2; i += 1){
+    int temp = arr[i];
+    arr[i] = arr[arr.length-i-1];
+    arr[arr.length-i-1]= temp;
+  }
+ }
+ static int [] reversed (intI] arr) {
+  int[] newArray = new int[arr. length];
+  for (int i = 0; i < arr. length/2; 1 += 1) k
+    int temp = arr[i]:
+    arr[i] = arr[arr.length - i- 1]:
+    arr[arr. length- i-1] = temp;
+  }
+  for (int i = 0; i < arr. length; it=1) {
+    newArray[i] = arr[arr.length-i- 1];
+  }
+  return newArray;
+ }
+}
+~~~
+
 
 
 
