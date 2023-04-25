@@ -2,7 +2,10 @@
 
 ## Part 1
 
+
 ![Image](Running1.png)
+
+The methods that are called  
 ![Image](Running2.png)
 
 
@@ -48,6 +51,17 @@ The symptom, as the output of running the tests
 
 The bug, as the before-and-after code change required to fix it 
 
+Before:
+
+~~~
+static void reverseInPlace(int[] arr){
+  for(int i = 0; i< arr.length; i+=1){
+    arr[i] = arr[arr.length - i -1]:
+  }
+}
+~~~
+
+After:
 ~~~
 public class ArrayExamples{
   static void reverseInPlace(int[] arr){
@@ -71,6 +85,8 @@ public class ArrayExamples{
  }
 }
 ~~~
+
+## Part 3
 
 
 
