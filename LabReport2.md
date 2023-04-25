@@ -6,10 +6,16 @@
 
 ![Image](Running1.png)
 
-The methods that are called within my code are the handleRequest 
+The methods that are called within my code is the handleRequest method. This method takes the message I want the server to return and returns it.
+
+
 
 
 ![Image](Running2.png)
+
+The methods that are called within my code is the handleRequest method. This method takes the message I want the server to return and returns it.
+
+The relevant arguments to those methods are 
 
 
 ## Part 2
@@ -90,6 +96,8 @@ public class ArrayExamples{
 ~~~
 
 ## Part 3
+
+Something that I learned in lab was how big of an impact such a tiny mistake can have on your entire code. For example when working with my group to debug the reverseInPlace method I was suprised to find out that a main reason our array was not getting properly switched was because we were not dividing by 2 in our for loop to only switch half the elements. By dividing by 2 in our method and switching the starting element, we were able to fix the entire output to get our expected outcome.
 
 
 
