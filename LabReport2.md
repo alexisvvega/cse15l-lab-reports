@@ -1,5 +1,11 @@
 # Lab Report 2
 
+## Part 1
+
+![Image](Running1.png)
+![Image](Running2.png)
+
+
 ## Part 2
 
 A failure-inducing input for the buggy program, as a JUnit test and any associated code
