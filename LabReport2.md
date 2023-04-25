@@ -8,14 +8,19 @@
 
 The methods that are called within my code is the handleRequest method. This method takes the message I want the server to return and returns it.
 
+The relevant arguments to those methods are URI url which represents the requested URL and contains the info on its path and query parameters. The values of the relevent fields of the class are String merge which stores the message that is sent and is initialized to an empty string when an instance of the StringHandler class is created. Once the method is called and a new message is recieved, it is appended into 'merge'.
 
+
+The value of the merge field changes based on the requests of the server. If the URL path matches the url.getPath and contains the url.getQuery, then the merge field changes, updates and returns. However, if the URL path does not match url.getPath or conatin an 's' in the url.getQuery, then the merge field is not updated and will remain unchanged.
 
 
 ![Image](Running2.png)
 
 The methods that are called within my code is the handleRequest method. This method takes the message I want the server to return and returns it.
 
-The relevant arguments to those methods are 
+The relevant arguments to those methods are URI url which represents the requested URL and contains the info on its path and query parameters. The values of the relevent fields of the class are String merge which stores the message that is sent and is initialized to an empty string when an instance of the StringHandler class is created. Once the method is called and a new message is recieved, it is appended into 'merge'.
+
+The value of the merge field changes based on the requests of the server. If the URL path matches the url.getPath and contains the url.getQuery, then the merge field changes, updates and returns. However, if the URL path does not match url.getPath or conatin an 's' in the url.getQuery, then the merge field is not updated and will remain unchanged.
 
 
 ## Part 2
