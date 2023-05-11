@@ -2,7 +2,7 @@
 
 The command I have chosen is "find". The find command is used when searching for files and directories in a specified location as well as its subdirectories.
 
-1.The first command is "-type"
+1. The first command is "-type"
 
 ~~~
 $ find ./technical -type <specifier> 
@@ -26,7 +26,7 @@ this will print out the following:
 ./technical/biomed
 ./technical/911report
 ~~~
-d stands for directories, so "-type d" searches for all the directories in the home directory.
+d stands for directories, so "-type d" searches for all the directories in the home directory. 
 
 another use of -type command is:
 ~~~
@@ -74,5 +74,10 @@ this will print out the following:
 
 (There are more files but to save space these are a few that will be printed.)
 
-f stands for This argument searches for regular files only. This is the default behavior when no -type option is specified.
+f stands for the regular files, and is also the default behavior when no -type option is specified. Using "-type f" will search for all the regular files and display them.
+
+Overall the "-find" command is useful when trying to find specific files or directories. By specifying the type of file you are looking for you can easily filter your searches and make it easier to locate the files you are interested in. 
+
+Link to [sources](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
 
