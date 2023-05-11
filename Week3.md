@@ -2,85 +2,7 @@
 
 The command I have chosen is "find". The find command is used when searching for files and directories in a specified location as well as its subdirectories.
 
-1. The first command is "-type"
-
-~~~
-$ find ./technical -type <specifier> 
-~~~
-a use of this command can look like this:
-
-~~~
-$ find ./technical -type d
-~~~
-this will print out the following:
-~~~
-./technical
-./technical/government
-./technical/government/About_LSC
-./technical/government/Env_Prot_Agen
-./technical/government/Alcohol_Problems
-./technical/government/Gen_Account_Office
-./technical/government/Post_Rate_Comm
-./technical/government/Media
-./technical/plos
-./technical/biomed
-./technical/911report
-~~~
-d stands for directories, so "-type d" searches for all the directories in the home directory. 
-
-another use of -type command is:
-~~~
-$ find ./technical -type f
-~~~
-this will print out the following:
-~~~
-./technical/plos/journal.pbio.0020306.txt
-./technical/plos/journal.pbio.0030129.txt
-./technical/plos/journal.pbio.0020307.txt
-./technical/plos/pmed.0020180.txt
-./technical/plos/pmed.0020194.txt
-./technical/plos/pmed.0020157.txt
-./technical/plos/journal.pbio.0020105.txt
-./technical/plos/pmed.0020023.txt
-./technical/plos/journal.pbio.0020071.txt
-./technical/plos/pmed.0020235.txt
-.
-.
-.
-./technical/biomed/bcr567.txt
-./technical/biomed/gb-2002-3-10-research0055.txt
-./technical/biomed/1471-2121-2-3.txt
-./technical/biomed/1471-213X-1-11.txt
-./technical/biomed/1472-684X-1-5.txt
-./technical/biomed/1476-4598-1-6.txt
-./technical/911report/chapter-13.4.txt
-./technical/911report/chapter-13.5.txt
-./technical/911report/chapter-13.1.txt
-./technical/911report/chapter-13.2.txt
-./technical/911report/chapter-13.3.txt
-./technical/911report/chapter-3.txt
-./technical/911report/chapter-2.txt
-./technical/911report/chapter-1.txt
-./technical/911report/chapter-5.txt
-./technical/911report/chapter-6.txt
-./technical/911report/chapter-7.txt
-./technical/911report/chapter-9.txt
-./technical/911report/chapter-8.txt
-./technical/911report/preface.txt
-./technical/911report/chapter-12.txt
-./technical/911report/chapter-10.txt
-./technical/911report/chapter-11.txt
-~~~
-
-(There are more files but to save space these are a few that will be printed.)
-
-f stands for the regular files, and is also the default behavior when no -type option is specified. Using "-type f" will search for all the regular files and display them.
-
-Overall the "-find" command is useful when trying to find specific files or directories. By specifying the type of file you are looking for you can easily filter your searches and make it easier to locate the files you are interested in. 
-
-Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
-
-2. The next command is "-name"
+1. The first command is "-name"
 
 ~~~
 $ find ./technical -name <search of choice> 
@@ -96,6 +18,7 @@ which will produce this:
 ~~~
 ./technical/biomed
 ~~~
+
 The name command will search for the files and directories in a specific location with a specific name. It takes in a file in this case ./technical and returns a list of all files or directories in the specified location that match the specified name.
 You can also use this command with " * " which allows for a wider use of searching. 
 
@@ -190,12 +113,28 @@ will find all the files within the path ./technical/biomed that contain the word
 ./technical/biomed/gb-2001-2-3-research0007.txt
 ./technical/biomed/gb-2002-3-10-research0055.txt
 ~~~
-another use of the name command can look like this:
+Another example of using the name command is:
+~~~
+$ find ./technical/911report -name "*13*"
+~~~
+which will produce:
+~~~
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-13.1.txt
+./technical/911report/chapter-13.2.txt
+./technical/911report/chapter-13.3.txt
+~~~
+Overall the name is very useful when working with large files and wanting to quickly search for specific files with certain characteristics.
+
+Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
+2. Another similar command to name is "-iname" which can look like this:
 ~~~
 $ find ./technical  -iname "*ar*"
 ~~~
 
-which will produce this: 
+this will produce the following: 
 ~~~
 ./technical/government/About_LSC/CONFIG_STANDARDS.txt
 ./technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
@@ -341,12 +280,142 @@ which will produce this:
 
 the iname command is similar to the name command where it will search for the files and directories in a specific location with a specific name however unlike name itself, iname is case sensitive and will find all files with "ar" in it, upper and lowercase. 
 
-Overall the name and iname command are very useful when working with large files and wanting to quickly search for specific files with certain characteristics.
+
+Another use of iname can be seen here:
+~~~
+find ./technical/government -iname "a*"
+~~~
+in here I am going into another path and finding all files that contain an a.
+
+this will produce:
+
+~~~
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen/atx1-6.txt
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office/ai00134.txt
+./technical/government/Gen_Account_Office/ai9868.txt
+./technical/government/Gen_Account_Office/ai2132.txt
+./technical/government/Media/Anthem_Payout.txt
+./technical/government/Media/Abuse_penalties.txt
+./technical/government/Media/agency_expands.txt
+./technical/government/Media/Annual_Fee.txt
+./technical/government/Media/AP_LawSchoolDebts.txt
+./technical/government/Media/Avoids_Budget_Cut.txt
+./technical/government/Media/Assuring_Underprivileged.txt
+./technical/government/Media/Attorney_gives_his_time.txt
+./technical/government/Media/All_May_Have_Justice.txt
+./technical/government/Media/Advocate_for_Poor.txt
+./technical/government/Media/A_Perk_of_Age.txt
+./technical/government/Media/A_helping_hand.txt
+./technical/government/Media/Aid_Gets_7_Million.txt
+~~~
+
+Overall the name and iname command are very useful and similar when working with large files and wanting to quickly search for specific files with certain characteristics. iname is more beneficial when wanting to not be case sensitive.
 
 Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
 
-3. Another command is -maxdepth 
+3. Another command is "-type d"
+
 ~~~
-$ find ./technical maxdepth 3
+$ find ./technical -type <specifier> 
 ~~~
+
+a use of this command can look like this:
+
+~~~
+$ find ./technical -type d
+~~~
+
+this will print out the following:
+
+~~~
+./technical
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+./technical/plos
+./technical/biomed
+./technical/911report
+~~~
+
+d stands for directories, so "-type d" searches for all the directories in the home directory. 
+
+another use of this can look as such:
+
+~~~
+find ./technical/government -type d
+~~~
+which will produce: 
+~~~
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+~~~
+
+
+Overall the "-find d" command is useful when trying to find specific directories. By specifying the type of file you are looking for you can easily filter your searches and make it easier to locate the files you are interested in. 
+
+Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
+4. another use of -type command is "-type f":
+~~~
+$ find ./technical -type f
+~~~
+this will print out the following:
+~~~
+./technical/plos/journal.pbio.0020306.txt
+./technical/plos/journal.pbio.0030129.txt
+./technical/plos/journal.pbio.0020307.txt
+./technical/plos/pmed.0020180.txt
+./technical/plos/pmed.0020194.txt
+./technical/plos/pmed.0020157.txt
+./technical/plos/journal.pbio.0020105.txt
+./technical/plos/pmed.0020023.txt
+./technical/plos/journal.pbio.0020071.txt
+./technical/plos/pmed.0020235.txt
+.
+.
+.
+./technical/biomed/bcr567.txt
+./technical/biomed/gb-2002-3-10-research0055.txt
+./technical/biomed/1471-2121-2-3.txt
+./technical/biomed/1471-213X-1-11.txt
+./technical/biomed/1472-684X-1-5.txt
+./technical/biomed/1476-4598-1-6.txt
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-13.1.txt
+./technical/911report/chapter-13.2.txt
+./technical/911report/chapter-13.3.txt
+./technical/911report/chapter-3.txt
+./technical/911report/chapter-2.txt
+./technical/911report/chapter-1.txt
+./technical/911report/chapter-5.txt
+./technical/911report/chapter-6.txt
+./technical/911report/chapter-7.txt
+./technical/911report/chapter-9.txt
+./technical/911report/chapter-8.txt
+./technical/911report/preface.txt
+./technical/911report/chapter-12.txt
+./technical/911report/chapter-10.txt
+./technical/911report/chapter-11.txt
+~~~
+
+(There are more files but to save space these are a few that will be printed.)
+
+f stands for the regular files, and is also the default behavior when no -type option is specified. Using "-type f" will search for all the regular files and display them.
+
+Overall the "-find" commands are useful when trying to find specific files or directories. By specifying the type of file you are looking for you can easily filter your searches and make it easier to locate the files you are interested in. 
+
+Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
 
