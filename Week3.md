@@ -74,3 +74,5 @@ this will print out the following:
 
 (There are more files but to save space these are a few that will be printed.)
 
+f stands for This argument searches for regular files only. This is the default behavior when no -type option is specified.
+
