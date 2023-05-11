@@ -35,7 +35,7 @@ d stands for directories, so "-type d" searches for all the directories in the h
 another use of this can look as such:
 
 ~~~
-find ./technical/government -type d
+$ find ./technical/government -type d
 ~~~
 which will produce: 
 ~~~
@@ -107,13 +107,13 @@ Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-co
 
 this command can be written as: 
 ~~~
-find <path> -maxdepth <number>
+$ find <path> -maxdepth <number>
 ~~~
 this commands purpose is to limit the depth of your search.
 
 a use of it can be seen here:
 ~~~
-find ./technical/government -maxdepth 2 -iname "*do*"
+$ find ./technical/government -maxdepth 2 -iname "*do*"
 ~~~
 this will produce the following: 
 ~~~
