@@ -2,7 +2,7 @@
 
 The command I have chosen is "find". The find command is used when searching for files and directories in a specified location as well as its subdirectories.
 
-1. The first command is "-type"
+1)The first command is "-type"
 
 ~~~
 $ find ./technical -type <specifier> 
@@ -103,7 +103,7 @@ Overall the "-find" commands are useful when trying to find specific files or di
 
 Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
 
-2. another useful command is -maxdepth
+2)Another useful command is -maxdepth
 
 this command can be written as: 
 ~~~
@@ -253,7 +253,7 @@ Overall the purpose of maxdepth and mindepth followed by a number, is to limit t
 
 Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
 
-3. another command is "-name"
+3)Another command is "-name"
 
 ~~~
 $ find ./technical -name <search of choice> 
@@ -380,7 +380,7 @@ Overall the name is very useful when working with large files and wanting to qui
 
 Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
 
-4. Another similar command to name is "-iname" which can look like this:
+4)Another similar command to name is "-iname" which can look like this:
 ~~~
 $ find ./technical  -iname "*ar*"
 ~~~
