@@ -78,7 +78,7 @@ f stands for the regular files, and is also the default behavior when no -type o
 
 Overall the "-find" command is useful when trying to find specific files or directories. By specifying the type of file you are looking for you can easily filter your searches and make it easier to locate the files you are interested in. 
 
-Link to [sources](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
 
 2. The next command is "-name"
 
@@ -343,5 +343,10 @@ the iname command is similar to the name command where it will search for the fi
 
 Overall the name and iname command are very useful when working with large files and wanting to quickly search for specific files with certain characteristics.
 
-3.
+Link to [source](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
+3. Another command is -maxdepth 
+~~~
+$ find ./technical maxdepth 3
+~~~
 
