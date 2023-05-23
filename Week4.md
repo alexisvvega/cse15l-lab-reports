@@ -1,6 +1,6 @@
 # Lab Report 4
 
-## Step 1: Logging into ieng6
+## Step 1: Log into ieng6
 
 To log in you first type your ssh login which should look like this:
 ~~~
@@ -14,7 +14,15 @@ Doing this should result in the following:
 
 This output provides the information of your last log in and confirms your sucessful log in.
 
-## Step 2: 
+## Step 2: Clone your fork of the repository from your Github account
+
+~~~
+$ git clone git@github.com:alexisvvega/lab7.git
+~~~
+
+Doing this should produce the following:
+
+
 
 
 
