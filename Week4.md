@@ -16,6 +16,9 @@ This output provides the information of your last log in and confirms your suces
 
 ## Step 2: Clone your fork of the repository from your Github account
 
+To do this type git clone and copy and paste the link of the repository from your github account.
+(to copy press Command-C and to paste press Command-V)
+
 ~~~
 $ git clone git@github.com:alexisvvega/lab7.git
 ~~~
@@ -29,8 +32,11 @@ Doing this should produce the following:
 Before running the tests its important to check that you are in the correct directory.
 
 To check enter ls to check the files in your current working directory.
+( < ls > < enter > )
 Then cd into lab7 to change the current directory.
+( < cd lab7 > < enter > )
 Then ls to make sure the files are all correct.
+( < ls > < enter > )
 
 This process should look like this:
 
@@ -43,9 +49,13 @@ $ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java
 ~~~
 
+I got these commands by pressing < up > < up > < enter > and then < up > < up > < up > < enter > 
+(the command was 2 up and 3 up in the search history, so I used up arrow to access it)
+
+
 This will produce the following:
 
-![Image](FAILURE)
+![Image](FAILURE.png)
 
 This shows all the failing tests.
 
@@ -54,6 +64,7 @@ This shows all the failing tests.
 To fix the failures you will need to edit the code file. 
 
 To edit enter:
+
 ~~~
 $ vim ListExamples.java
 ~~~
@@ -108,6 +119,10 @@ $ git push -u origin main
 Which will produce the following: 
 
 ![Image](Finished.png)
+
+The changes have been succesfully made and pushed into github.
+
+
 
 
 
