@@ -67,7 +67,56 @@ Pressed < i > to enter insert mode and edit the 1 into a 2
 Then you press < esc > to exit insert mode.
 And finally enter < :wq > to save all changes and exit.
 
-![Image]()
+The fixed code should look like this: 
+
+![Image](CodeFix.png)
+
+## Step 5: Run the tests, demonstrating that they now succeed
+
+Running the commands again: 
+
+~~~
+$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java
+~~~
+
+should now produce the following: 
+
+![Image](Hooray.png)
+
+## Step 6: Commit and push the resulting change to your Github account (you can pick any commit message!)
+
+Now that the code is fixed we are able to commit and push.
+
+To do this you need to enter the following into your terminal:
+
+~~~
+$ git add ListExamples.java
+$ git commit -m 'first commit'
+~~~
+
+Doing this will produce this message: 
+
+![Image](Gitting.png)
+
+After this you need to also enter: 
+
+~~~
+$ git push -u origin main
+~~~
+
+Which will produce the following: 
+
+![Image](Finished.png)
+
+
+
+
+
+
+
+
+
 
 
 
