@@ -43,22 +43,31 @@ $ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java
 ~~~
 
+This will produce the following:
+
+![Image](FAILURE)
+
+This shows all the failing tests.
+
+## Step 4: Edit the code file to fix the failing test
+
+To fix the failures you will need to edit the code file. 
+
+To edit enter:
+~~~
+$ vim ListExamples.java
+~~~
+ 
+Doing this should take you to the code where you will edit it to fix the failures.
+To fix the failures you will have to change index1 to be index2.
+For me the cursor was already on index1 and I did not have to search for it.
+(If your cursor was not already on the desired place you could type < /index1 > and press < n > 9 times.)
+After this I pressed < x > to delete the 1.
+Pressed < i > to enter insert mode and edit the 1 into a 2 
+Then you press < esc > to exit insert mode.
+And finally enter < :wq > to save all changes and exit.
+
+![Image]()
 
 
 
-
-
-
-
-
-
-
-  
-
-
-*cursor was already on index1.
-*press x to delete
-*press i to insert mode and change
-*press 2 
-*press esc to get out 
-*press :wq to save work
