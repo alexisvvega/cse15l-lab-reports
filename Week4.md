@@ -2,6 +2,15 @@
 
 ## Step 1: Logging into ieng6
 
+![Image](Loggingieng6)
+
+To log in you first type your ssh login 
+~~~
+$ ssh cs15lsp23jc@ieng6.ucsd.edu
+~~~
+and pressed <Enter>
+
+
 
 
 *cursor was already on index1.
