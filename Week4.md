@@ -22,6 +22,21 @@ $ git clone git@github.com:alexisvvega/lab7.git
 
 Doing this should produce the following:
 
+![Image](Forking.png)
+
+## Step 3: Run the tests, demonstrating that they fail
+
+Before running the tests its important to check that you are in the correct directory.
+
+To check enter ls to check the files in your current working directory.
+Then cd into lab7 to change the current directory.
+Then ls to make sure the files are all correct.
+
+This process should look like this:
+
+
+
+
 
 
 
