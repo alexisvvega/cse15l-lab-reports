@@ -6,15 +6,15 @@ To log in you first type your ssh login which should look like this:
 ~~~
 $ ssh cs15lsp23jc@ieng6.ucsd.edu
 ~~~
-and pressed <enter>
-  
-~~~
-  
-~~~
+press < enter > and input your password.
 
 Doing this should result in the following:
 
-![Image](Loggingieng6)
+![Image](Loggingieng6.png)
+
+This output provides the information of your last log in and confirms your sucessful log in.
+
+## Step 2: 
 
 
   
