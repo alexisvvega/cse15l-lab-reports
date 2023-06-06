@@ -62,6 +62,39 @@ The output should say ```The sum of the numbers is: 55``` however it is saying `
 
 Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.
 
+I know that in order to run the terminal I need to make sure that I am in the correct directory so I did:
+```
+Alexiss-MacBook-Air-2:lab magdalenavega$ ls
+bash            lab5.java
+Alexiss-MacBook-Air-2:lab magdalenavega$ cd lab5.java
+```
+and then I ran the following: 
+```
+Alexiss-MacBook-Air-2:lab5.java magdalenavega$ javac counting.java
+Alexiss-MacBook-Air-2:lab5.java magdalenavega$ java counting
+```
+which produced the following:
+```
+Let's count from 1 to 10 and calculate the sum!
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Counting complete!
+The sum of the numbers is: 10
+Have a great day!
+```
+This is what my folders and files look like as well: 
+
+![Image](TheFiles.png)
+
 ## Part 2 – Reflection
 During the second half of the quarter, I learned about vim and its various commands and features. Vim is a text editor that has a wide range of functionalities and modes such as normal, insert and visual. Within these modes there are many cool features and navigation techniques through the use of your keys on your keyboard. 
 ~~~
